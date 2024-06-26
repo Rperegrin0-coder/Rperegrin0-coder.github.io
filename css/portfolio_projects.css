@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #7a6f6f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly opaque black background */
+    transition: background-color 0.5s ease;
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White text color */
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12; /* A brighter color for better visibility on hover */
+}
+
+.projects-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    flex: 1;
+}
+
+.projects-section .text-center {
+    margin-bottom: 40px;
+}
+
+.project-card {
+    margin-bottom: 30px;
+}
+
+.project-card .card-body {
+    text-align: left;
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-card .card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.project-card .btn {
+    background-color: #0e0202;
+    color: white;
+}
+
+.project-card .btn:hover {
+    background-color: #9c1111;
+    color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width to position the arrows further apart */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Change the background color of the arrows */
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: -5%; /* Adjust the left position to move the arrow further left */
+}
+
+.carousel-control-next {
+    right: -5%; /* Adjust the right position to move the arrow further right */
+}
+
+/* Add styles for black-and-white images with color on hover */
+.project-img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.project-card:hover .project-img {
+    filter: grayscale(0%);
+}
+
+.footer {
+    background-color: #0e0202;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+/* Centering title with lines */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title-with-lines {
+    position: relative;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #7a6f6f;
+    margin: 0 10px;
+}
+
+.title-with-lines::before {
+    margin-right: 20px;
+}
+
+.title-with-lines::after {
+    margin-left: 20px;
+}

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #7a6f6f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly opaque black background */
+    transition: background-color 0.5s ease;
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White text color */
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12; /* A brighter color for better visibility on hover */
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    flex: 1;
+}
+
+.about-section .text-center {
+    margin-bottom: 40px;
+}
+
+.work-experience, .education {
+    margin-bottom: 30px;
+}
+
+.work-experience h4, .education h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.work-experience ul, .education ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #0e0202;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+/* Centering title with lines */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title-with-lines {
+    position: relative;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #7a6f6f; /* Make sure the color is visible */
+    margin: 0 10px;
+}
+
+.title-with-lines::before {
+    margin-right: 20px;
+}
+
+.title-with-lines::after {
+    margin-left: 20px;
+}

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const helloText = "Hello,";
     const textArray = [
         "Welcome to my portfolio.",
-        "I'm Raheem Peregrino-Tawio, a passionate Software Engineer.",
+        "I'm Raheem Peregrino-Taiwo, a passionate Software Engineer.",
         "I specialize in developing innovative and efficient solutions.",
         "Let's build something amazing together!"
     ];
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (currentCharIndex < textArray[currentIndex].length) {
             typingElement.innerHTML += textArray[currentIndex].charAt(currentCharIndex);
             currentCharIndex++;
-            setTimeout(type, 100); // Adjust typing speed here
+            setTimeout(type, 50); // Adjust typing speed here
         } else {
             currentCharIndex = 0;
             currentIndex++;
@@ -38,3 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type();
 });
+
+
+

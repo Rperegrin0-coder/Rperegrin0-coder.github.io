@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #7a6f6f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly opaque black background */
+    transition: background-color 0.5s ease;
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White text color */
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12; /* A brighter color for better visibility on hover */
+}
+
+.blog-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    flex: 1;
+}
+
+.blog-section .text-center {
+    margin-bottom: 40px;
+}
+
+.coming-soon {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #0e0202;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+/* Add lines to the sides of the title */
+.title-with-lines {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #7a6f6f;
+}
+
+.title-with-lines::before {
+    left: -60px;
+}
+
+.title-with-lines::after {
+    right: -60px;
+}

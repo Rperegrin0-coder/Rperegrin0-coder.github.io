@@ -16,12 +16,12 @@ body {
 }
 
 .navbar .nav-link:hover {
-    color: #e11717;
+    color:  #f39c12;
 }
 
 .hero-section {
     height: 100vh;
-    background-image: url('image.jpg');
+    background-image: url('../images/new1.avif');
     background-size: cover;
     background-position: center;
     position: relative;
